@@ -3,13 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>Kauann Shibuya — Desenvolvedor Full Stack & BI</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Kauann Shibuya</h1>
-        <p>Desenvolvedor Full Stack | Analise de Dados | Business Intelligence | SQL</p>
+    <header id="sobre" class="hero">
+        <img class="hero__foto" src="img/Kauann Shibuya.png" alt="Foto de Kauann Shibuya">
+
+        <div class="hero__texto">
+            <p class="hero__eyebrow">Olá, eu sou</p>
+            <h1>Kauann Shibuya</h1>
+            <p class="hero__role">Desenvolvedor Full Stack · Análise de Dados · BI · SQL</p>
+            <p class="hero__sobre">
+                Sou Desenvolvedor Full Stack, do Brasil. Tenho experiência em análise de dados e
+                Business Intelligence (BI) e foco no desenvolvimento de sistemas — unindo o olhar
+                analítico dos dados à construção de software.
+            </p>
+            <ul class="hero__destaques">
+                <li>Trabalho com desenvolvimento web e estudo Análise e Desenvolvimento de Sistemas na Unicesumar.</li>
+                <li>Atualmente foco todo o meu estudo e me aprofundo na linguagem JavaScript.</li>
+                <li>No tempo livre, gosto de estudar a área de dados e o desenvolvimento de jogos.</li>
+            </ul>
+            <div class="hero__acoes">
+                <a class="btn btn--primary" href="#projetos">Ver projetos</a>
+                <a class="btn" href="#contato">Falar comigo</a>
+            </div>
+        </div>
     </header>
 
     <nav>
@@ -22,70 +41,72 @@
     </nav>
 
     <main>
-        <section id="sobre">
-            <h2>Sobre mim</h2>
-            <p>
-                Experiência em análise de dados e Business Intelligence (BI), com
-                interesse em seguir carreira na área de tecnologia da informação, focando no
-                desenvolvimento de sistemas. Busco contribuir com
-                minhas habilidades em análise de dados para o desenvolvimento
-            </p>
-        </section>
-
         <section id="habilidades">
             <h2>Habilidades</h2>
 
-            <h3>Front-end</h3>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>TypeScript</li>
-                <li>React.js</li>
-                <li>Angular</li>
-                <li>Bootstrap</li>
-            </ul>
+            <div class="skills">
+                <div class="skill-group">
+                    <h3>Front-end</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>TypeScript</li>
+                        <li>React.js</li>
+                        <li>Angular</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                </div>
 
-            <h3>Back-end</h3>
-            <ul>
-                <li>Node.js</li>
-                <li>Express.js</li>
-                <li>PHP</li>
-                <li>Laravel</li>
-                <li>JSON</li>
-            </ul>
+                <div class="skill-group">
+                    <h3>Back-end</h3>
+                    <ul>
+                        <li>Node.js</li>
+                        <li>Express.js</li>
+                        <li>PHP</li>
+                        <li>Laravel</li>
+                        <li>JSON</li>
+                    </ul>
+                </div>
 
-            <h3>Banco de Dados</h3>
-            <ul>
-                <li>SQL</li>
-                <li>PostgreSQL</li>
-                <li>ORACLE</li>
-                <li>MariaDB</li>
-                <li>SQLlite</li>
-                <li>Data Warehouse</li>
-                <li>Dbeaver</li>
-            </ul>
+                <div class="skill-group">
+                    <h3>Banco de Dados</h3>
+                    <ul>
+                        <li>SQL</li>
+                        <li>PostgreSQL</li>
+                        <li>ORACLE</li>
+                        <li>MariaDB</li>
+                        <li>SQLlite</li>
+                        <li>Data Warehouse</li>
+                        <li>Dbeaver</li>
+                    </ul>
+                </div>
 
-            <h3>Dados &amp; BI</h3>
-            <ul>
-                <li>Power BI</li>
-                <li>DAX</li>
-                <li>Tableau</li>
-                <li>Metabase</li>
-                <li>Python</li>
-                <li>Excel</li>
-                <li>Análise de Dados</li>
-                <li>KPIs e relatórios de perfomance</li>
-            </ul>
+                <div class="skill-group">
+                    <h3>Dados &amp; BI</h3>
+                    <ul>
+                        <li>Power BI</li>
+                        <li>DAX</li>
+                        <li>Tableau</li>
+                        <li>Metabase</li>
+                        <li>Python</li>
+                        <li>Excel</li>
+                        <li>Análise de Dados</li>
+                        <li>KPIs e relatórios de performance</li>
+                    </ul>
+                </div>
 
-            <h3>Ferramentas &amp; Outros</h3>
-            <ul>
-                <li>Git e GitHub</li>
-                <li>Automação (Selenium, VBA)</li>
-                <li>ODBC</li>
-                <li>Metodologias Ágeis</li>
-                <li>IA Generativa(LLMs)</li>
-            </ul>
+                <div class="skill-group">
+                    <h3>Ferramentas &amp; Outros</h3>
+                    <ul>
+                        <li>Git e GitHub</li>
+                        <li>Automação (Selenium, VBA)</li>
+                        <li>ODBC</li>
+                        <li>Metodologias Ágeis</li>
+                        <li>IA Generativa (LLMs)</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
         <section id="projetos">
@@ -94,9 +115,9 @@
             <article>
                 <h3>Bot de Monitoramento de Arquivos no Discord</h3>
                 <p>
-                    Bot que monitora 27 planilhas(xlsm) em tempo real, detecta alterações, extrai os
+                    Bot que monitora 27 planilhas (xlsm) em tempo real, detecta alterações, extrai os
                     metadados do autor e notifica a equipe instantaneamente em um canal de texto em um
-                    servidor do discord escolhido.
+                    servidor do Discord escolhido.
                 </p>
                 <p><strong>Stacks: </strong>Python, Discord, APIs</p>
             </article>
@@ -104,19 +125,19 @@
             <article>
                 <h3>Implementação de BI para 27 departamentos</h3>
                 <p>
-                    Solução em Power Bi desenvolvida do zero, automatizado utilizando fonte de dados
+                    Solução em Power BI desenvolvida do zero, automatizada utilizando fontes de dados
                     atualizadas e dentro das rotinas, centralizando mais de 150 KPI's em dashboards
-                    interativos para todos os departamentos do Grupo MM
+                    interativos para todos os departamentos do Grupo MM.
                 </p>
                 <p><strong>Stacks: </strong>Power BI, DAX, SQL</p>
             </article>
 
             <article>
-                <h3>Auditoria de Despesa com IA(AlçadasIA)</h3>
+                <h3>Auditoria de Despesa com IA (AlçadasIA)</h3>
                 <p>
                     Sistema baseado em IA Generativa, treinado nas políticas e regulamentos internos
                     da empresa, que analisa solicitações de reembolso e gera uma análise de conformidade
-                    automática - reduzindo drasticamente o tempo de cada validação e o pequenos erros minunciosos
+                    automática — reduzindo drasticamente o tempo de cada validação e os pequenos erros minuciosos.
                 </p>
                 <p><strong>Stacks: </strong>IA Generativa (ChatGPT, Gemini e Claude)</p>
             </article>
@@ -124,36 +145,39 @@
             <article>
                 <h3>Sistema de Envio de E-mails (VBA)</h3>
                 <p>
-                    Automação em Excel que orquestra o envio de E-mails de cobrança via
+                    Automação em Excel que orquestra o envio de e-mails de cobrança via
                     Outlook e notificações via API para o Discord, eliminando o acompanhamento
-                    manual de pendências de todos os indicadores de cada Departamento do Grupo MM
+                    manual de pendências de todos os indicadores de cada departamento do Grupo MM.
                 </p>
-                <p><strong>Stacks: </strong>VBA, Excel, APIs, Discord </p>
+                <p><strong>Stacks: </strong>VBA, Excel, APIs, Discord</p>
             </article>
         </section>
     </main>
 
     <aside>
-        <h2>Links</h2>
-        <ul>
-            <li>
-                <a href="https://github.com/Shibuyentos" target="_blank" rel="noopener noreferrer">
-                    GitHub
-                </a>
-            </li>
+        <div>
+            <h2>Links</h2>
+            <ul>
+                <li>
+                    <a href="https://github.com/Shibuyentos" target="_blank" rel="noopener noreferrer">
+                        GitHub
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/kauann-shibuya" target="_blank" rel="noopener noreferrer">
+                        LinkedIn
+                    </a>
+                </li>
+            </ul>
+        </div>
 
-            <li>
-                <a href="https://www.linkedin.com/in/kauann-shibuya" target="_blank" rel="noopener noreferrer">
-                    LinkedIn
-                </a>
-            </li>
-        </ul>
-
-        <h2>Curiosidades</h2>
-        <ul>
-            <li>Entusiasta de IA — uso as ferramentas como alavanca, não como muleta.</li>
-            <li>Entusiasta de handcrafted code — escrevo na mão para entender de verdade.</li>
-        </ul>
+        <div>
+            <h2>Curiosidades</h2>
+            <ul>
+                <li>Entusiasta de IA — uso as ferramentas como alavanca, não como muleta.</li>
+                <li>Entusiasta de handcrafted code — escrevo na mão para entender de verdade.</li>
+            </ul>
+        </div>
     </aside>
 
     <footer id="contato">
@@ -162,7 +186,7 @@
             E-mail:
             <a href="mailto:shibuyakauann7@gmail.com">shibuyakauann7@gmail.com</a>
         </p>
-        <p>&copy; 2026 Kauann Shibuya. Todos os Direitos reservados</p>
+        <p>&copy; 2026 Kauann Shibuya. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
